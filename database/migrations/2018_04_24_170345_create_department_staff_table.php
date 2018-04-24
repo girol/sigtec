@@ -25,6 +25,7 @@ class CreateDepartmentStaffTable extends Migration
                 ->references('id')
                 ->on('departments')
                 ->onDelete('cascade');
+            $table->primary(['users_id', 'departments_id']);
         });
     }
 
