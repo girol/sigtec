@@ -29,18 +29,16 @@ class CreateTicketsTable extends Migration
 
             $table->integer('department_manager_id')
                 ->unsigned()
-                ->nullable()
                 ->comment("Manager at the time of the ticket opening");
 
             $table->integer('location_manager_id')
                 ->unsigned()
-                ->nullable()
                 ->comment("Location Manager at the time of the ticket opening");
             
-            $table->integer('ticket_status_id')->unsigned()->nullable();
-            $table->integer('location_id')->unsigned()->nullable();
-            $table->integer('department_id')->unsigned()->nullable();
-            $table->integer('purpose_id')->unsigned()->nullable();
+            $table->integer('ticket_status_id')->unsigned();
+            $table->integer('location_id')->unsigned();
+            $table->integer('department_id')->unsigned();
+            $table->integer('purpose_id')->unsigned();
 
             # Constraints
 
