@@ -14,6 +14,7 @@ class TicketStatusesTableSeeder extends Seeder
         $now = date("Y-m-d H:i:s");
         DB::table('ticket_statuses')->insert([
             [
+                'id' => 1,
                 'name' => 'aberto',
                 'alias' => 'Aberto',
                 'bs_label' => 'default',
@@ -22,6 +23,7 @@ class TicketStatusesTableSeeder extends Seeder
                 "updated_at" => $now,
             ],
             [
+                'id' => 2,
                 'name' => 'em_atendimento',
                 'alias' => 'Em Atendimento',
                 'bs_label' => 'info',
@@ -30,6 +32,7 @@ class TicketStatusesTableSeeder extends Seeder
                 "updated_at" => $now,
             ],
             [
+                'id' => 3,
                 'name' => 'atendido',
                 'alias' => 'Atendido',
                 'bs_label' => 'success',
@@ -39,6 +42,7 @@ class TicketStatusesTableSeeder extends Seeder
             ],
 
             [
+                'id' => 4,
                 'name' => 'retorno',
                 'alias' => 'Retorno',
                 'bs_label' => 'danger',
@@ -48,6 +52,7 @@ class TicketStatusesTableSeeder extends Seeder
             ],
 
             [
+                'id' => 5,
                 'name' => 'em_espera',
                 'alias' => 'Em Espera',
                 'bs_label' => 'warning',
@@ -57,6 +62,7 @@ class TicketStatusesTableSeeder extends Seeder
             ],
 
             [
+                'id' => 6,
                 'name' => 'cancelado',
                 'alias' => 'Cancelado',
                 'bs_label' => 'primary',
