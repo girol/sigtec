@@ -15,6 +15,7 @@ class DepartmentsTableSeeder extends Seeder
         $now = date("Y-m-d H:i:s");
         DB::table('departments')->insert([
             [
+                'id' => 1,
                 'name' => 'manutencao',
                 'icon' => 'fa-building',
                 'alias' => 'Manutenção Predial',
@@ -22,6 +23,7 @@ class DepartmentsTableSeeder extends Seeder
                 "updated_at" => $now,
             ],
             [
+                'id' => 2,
                 'name' => 'eletronica',
                 'icon' => 'fa-microchip',
                 'alias' => 'Eletrônica',
@@ -29,6 +31,7 @@ class DepartmentsTableSeeder extends Seeder
                 "updated_at" => $now,
             ],
             [
+                'id' => 3,
                 'name' => 'mecanica',
                 'icon' => 'fa-cog',
                 'alias' => 'Oficina Mecânica',
@@ -36,6 +39,7 @@ class DepartmentsTableSeeder extends Seeder
                 "updated_at" => $now,
             ],
             [
+                'id' => 4,
                 'name' => 'informatica',
                 'icon' => 'fa-desktop',
                 'alias' => 'Informática',
