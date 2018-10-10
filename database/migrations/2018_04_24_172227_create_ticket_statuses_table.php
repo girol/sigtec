@@ -15,8 +15,8 @@ class CreateTicketStatusesTable extends Migration
     {
         Schema::create('ticket_statuses', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('alias');
+            $table->string('name')->comment("string name as in: my_special_lab");
+            $table->string('alias')->comment("Human Readable name as in: My Special Lab");
             $table->string('bs_label')->comment("Short name for bootstrap labels");
             $table->string('icon')->comment("Short name for fontfyed icons as Font Awesome");
 
