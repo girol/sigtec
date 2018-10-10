@@ -14,6 +14,7 @@ class DevUsersTableSeeder extends Seeder
         $now = date("Y-m-d H:i:s");
         DB::table('users')->insert([
             [
+                'id' => 1,
                 'num_usp' => 100,
                 'password' => bcrypt('uspdev'),
                 'name' => 'Relator Chamados',
@@ -26,6 +27,7 @@ class DevUsersTableSeeder extends Seeder
             ],
 
             [
+                'id' => 2,
                 'num_usp' => 200,
                 'password' => bcrypt('uspdev'),
                 'name' => 'Técnico Informática',
@@ -38,6 +40,7 @@ class DevUsersTableSeeder extends Seeder
             ],
 
             [
+                'id' => 3,
                 'num_usp' => 300,
                 'password' => bcrypt('uspdev'),
                 'name' => 'Gestor Informática',
