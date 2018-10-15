@@ -18,7 +18,7 @@ class CreateLocationsTable extends Migration
             $table->string('room_number', 6);
             $table->string('name');
             $table->string('phone_number', 6);
-            $table->string('building_block', 6);
+            $table->string('block_number', 6);
             $table->string('floor', 15);
             $table->integer('manager_id')->unsigned();
             $table->foreign('manager_id')->references('id')->on('users');
