@@ -21,3 +21,9 @@ Faça deploy dos assets do AdminLTE utilizando o wrapper:
 ```bash
 php artisan deploy:assets
 ```
+
+Rode as migrations e `seeders` com o wrapper:
+
+```bash
+php artisan fresh:install
+```
