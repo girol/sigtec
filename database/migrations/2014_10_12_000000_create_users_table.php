@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('ramal');
+            $table->string('phone_number');
             $table->integer('job_titles_id')->unsigned();
             $table->foreign('job_titles_id')->references('id')->on('job_titles');
             $table->boolean('active');
