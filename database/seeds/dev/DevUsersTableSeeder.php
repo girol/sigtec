@@ -19,7 +19,7 @@ class DevUsersTableSeeder extends Seeder
                 'password' => bcrypt('uspdev'),
                 'name' => 'Relator Chamados',
                 'email' => 'relator@uspdev.local',
-                'ramal' => 1111,
+                'phone_number' => 1111,
                 'job_titles_id' => 2, // funcionário
                 'active' => true,
                 "created_at" => $now,
@@ -32,7 +32,7 @@ class DevUsersTableSeeder extends Seeder
                 'password' => bcrypt('uspdev'),
                 'name' => 'Técnico Informática',
                 'email' => 'tecnico@uspdev.local',
-                'ramal' => 2222,
+                'phone_number' => 2222,
                 'job_titles_id' => 2, // funcionário
                 'active' => true,
                 "created_at" => $now,
@@ -45,7 +45,7 @@ class DevUsersTableSeeder extends Seeder
                 'password' => bcrypt('uspdev'),
                 'name' => 'Gestor Informática',
                 'email' => 'gestor_info@uspdev.local',
-                'ramal' => 3333,
+                'phone_number' => 3333,
                 'job_titles_id' => 1, // Docente
                 'active' => true,
                 "created_at" => $now,
