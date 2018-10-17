@@ -36,6 +36,8 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
+        // Just in case...
+        abort(404);
         $this->middleware('guest');
     }
 
