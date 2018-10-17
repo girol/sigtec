@@ -12,6 +12,6 @@ class DevSeeder extends Seeder
     public function run()
     {
         $this->call(DevUsersTableSeeder::class);
-        $this->call(DevUserRolesTableSeeder::class);
+        $this->call(DevRoleUserTableSeeder::class);
     }
 }

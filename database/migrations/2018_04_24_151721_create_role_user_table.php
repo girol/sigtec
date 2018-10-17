@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUserRolesTable extends Migration
+class CreateRoleUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,20 +13,21 @@ class CreateUserRolesTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_roles', function (Blueprint $table) {
-            $table->integer('users_id')->unsigned()->index();
-            $table->foreign('users_id')
+        // Default name that laravel uses
+        Schema::create('role_user', function (Blueprint $table) {
+            $table->integer('user_id')->unsigned()->index();
+            $table->foreign('user_id')
                 ->references('id')
                 ->on('users')
                 ->onDelete('cascade');
 
-            $table->integer('roles_id')->unsigned()->index();
-            $table->foreign('roles_id')
+            $table->integer('role_id')->unsigned()->index();
+            $table->foreign('role_id')
                 ->references('id')
                 ->on('roles')
                 ->onDelete('cascade');
 
-            $table->primary(['users_id', 'roles_id']);
+            $table->primary(['user_id', 'role_id']);
             
         });
     }
